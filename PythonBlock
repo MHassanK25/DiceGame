@@ -1,0 +1,47 @@
+from random import randint
+from time import sleep
+
+P1Wins = 0
+P2Wins = 0
+
+for i in range(5):
+    print("Player 1 it's your turn.         Type 'roll' to roll the dice or 'quit' to forfeit. ")
+    userOneInput = input(">>>")
+    if userOneInput == "roll":
+        valueOne = randint(1, 6)
+        print("Player 1 rolled ", valueOne)
+        print(" Player 2 it's your turn.         Type 'roll' to roll the dice or 'quit' to forfeit . ")
+        userTwoInput = input(">>>")
+        if userTwoInput == "roll":
+            valueTwo = randint(1, 6)
+            print("Player 2 rolled ", valueTwo)
+            if valueOne > valueTwo:
+                print("Player 1 wins this round! ")
+                P1Wins += 1
+            elif valueOne == valueTwo:
+                print("It's a draw! ")
+            else:
+                print("Player 2 wins this round;")
+                P2Wins += 1
+        elif userTwoInput == "quit":
+            print("Player 1 wins this round! ")
+            P1Wins += 1
+        else:
+            print("Program ended abruptly")
+            break
+    elif userOneInput == "quit":
+        print("Player 2 wins this round! ")
+        P2Wins += 1
+    else:
+        print("Program ended abruptly. ")
+        break
+
+    sleep(2)
+
+print("Final results: ", P1Wins, "-", P2Wins)
+if P1Wins > P2Wins:
+    print("Player 1 is the winner! ")
+elif P1Wins == P2Wins:
+    print("It's a draw! ")
+else:
+    print("Player 2 is the winner! ")
