@@ -2,7 +2,7 @@
 
 I decided that for my project I would create a two-player dice game, in which the player who rolls a higher number wins. I am extremely interested in creating games and where it can take me. This project can help show me somewhere I could potentially go with my career, so in this project I will be discussing what I created.
 
-![Project Diagram](https://user-images.githubusercontent.com/74241590/196786994-afa9c296-3dc0-4fc2-b749-3992b20d16e6.png)
+![FlowChart](https://user-images.githubusercontent.com/74241590/196787351-8444ba29-29f4-4552-810b-1ea74c3d0ecf.png)
 
 Here is a basic flowchart of how a game of 2 player dice works. From this I will be creating a code that will automatically print the winner after the input from the two users without the user having to request it or work it out.
 In my program, I have used if and else statements to determine which number is larger, and I have also turned the person who wins into a mathematical value, this way at the end of the input, the code will release the variable attached to the higher value which will print which player was the winner. I selected this design as I felt it would be the most efficient in displaying who had won with the least effort required.
